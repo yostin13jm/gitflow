@@ -24,6 +24,7 @@ function crearUsuario() {
   localStorage.setItem("usuarios", JSON.stringify(usuarios));
   mostrarUsuarios();
   document.getElementById("nombre").value = "";
+
 }
 
 function editarUsuario(index) {
