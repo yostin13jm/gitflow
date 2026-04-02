@@ -16,12 +16,15 @@ function mostrarUsuarios() {
 
 function crearUsuario() {
   const nombre = document.getElementById("nombre").value;
-  if (nombre) {
-    usuarios.push(nombre);
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    mostrarUsuarios();
-    document.getElementById("nombre").value = "";
+  if (!nombre.trim()) {
+    alert("El nombre no puede estar vacío");
+    return;
   }
+  usuarios.push(nombre);
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
+  mostrarUsuarios();
+  document.getElementById("nombre").value = "";
+
 }
 
 function editarUsuario(index) {
@@ -40,3 +43,4 @@ function eliminarUsuario(index) {
 }
 
 mostrarUsuarios();
+
