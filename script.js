@@ -44,3 +44,8 @@ function eliminarUsuario(index) {
 
 mostrarUsuarios();
 
+
+function simularPago() {
+  alert("Pago simulado correctamente");
+}
+
