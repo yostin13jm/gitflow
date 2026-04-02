@@ -24,6 +24,7 @@ function crearUsuario() {
   localStorage.setItem("usuarios", JSON.stringify(usuarios));
   mostrarUsuarios();
   document.getElementById("nombre").value = "";
+
 }
 
 function editarUsuario(index) {
@@ -43,6 +44,8 @@ function eliminarUsuario(index) {
 
 mostrarUsuarios();
 
+
 function simularPago() {
   alert("Pago simulado correctamente");
 }
+
