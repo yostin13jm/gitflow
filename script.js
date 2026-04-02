@@ -12,6 +12,9 @@ function mostrarUsuarios() {
       </li>
     `;
   });
+
+  // Mostrar total de usuarios
+  document.getElementById("total").textContent = `Total de usuarios: ${usuarios.length}`;
 }
 
 function crearUsuario() {
