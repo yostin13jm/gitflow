@@ -52,3 +52,13 @@ function simularPago() {
   alert("Pago simulado correctamente");
 }
 
+
+function mostrarFecha() {
+  const hoy = new Date();
+  const opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
+  document.getElementById("fecha").textContent = 
+    "Fecha actual: " + hoy.toLocaleDateString("es-ES", opciones);
+}
+
+mostrarFecha();
+
